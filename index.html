@@ -1,44 +1,26 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <title>Yuh</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            ul {
-              list-style-type: none;
-              margin: 0;
-              padding: 0;
-              overflow: hidden;
-              background-color: #333333;
-            }
-            
-            li {
-              float: left;
-            }
-            
-            li a {
-              display: block;
-              color: white;
-              text-align: center;
-              padding: 16px;
-              text-decoration: none;
-            }
-            
-            li a:hover {
-              background-color: #111111;
-            }
-        </style>
-    </head>
-    <body>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="monkey.html">Monkey</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-          </ul>      
-        <header>
-            <h1 style="font-family:verdana;">Hello, world!</h1>
-        </header>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Desprets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Benjamin Desprets</h1>
+        <ul class="nav-links">
+            <li><a href="#contact" id="contact-link">Contact</a></li>
+            <li><a href="#cv" id="cv-link">CV</a></li>
+            <li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
+        </ul>
+    </header>    
+    <main>
+        <div class="background-image" style="background-image: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');"></div>
+        <div class="content-wrapper hidden" id="content-wrapper">
+            <div class="content" id="content"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
 </html>
